@@ -9,3 +9,26 @@
 ::placeholder{
     color: rgb(173, 169, 169) !important;
 }
+#click,label{
+    display: none;
+}
+@media(max-width:576px){
+    label{
+        display: flex;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav{
+        position: absolute;
+        border:  1px solid white;
+        padding: 5px;
+        border-radius: 20px;
+        left: -140px;
+        background-color: rgba(0,0,0,0.6);
+    }
+    #click:checked~nav{
+        left: 2px;
+        top:50px;
+    }
+}
